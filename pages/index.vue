@@ -12,7 +12,7 @@
       <div class="text-center font-bold py-4 text-2xl">1st Jumah at <p class="text-red-500 inline">1:30 pm</p> 2nd Jumah at <p class="text-red-500 inline">2:00 pm</p></div>
     </div>
 
-    <div class="p-5 text-3xl text-center flex-grow grid">
+    <div class="p-5 text-4xl text-center flex-grow grid">
       <div class="flex flex-col">
         <div class="flex flex-row">
           <div class="flex-grow" />
@@ -44,9 +44,10 @@ export default {
   data () {
     return {
       ads: [
-        'Quran class for kids after maghrib',
-        'Hahaha no one is safe',
-        'go home'
+        'Daily Quran class for kids Mon to Thurs 5.30 to 7.00 PM',
+        'Special Friday Lecture series on Fridays after Asr Jamah',
+        'Daily Short Lecture after Isha\'a',
+        'Adults and Youth Quran Class Tue and Thurs after Maghrib',
       ]
     }
   },

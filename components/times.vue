@@ -71,10 +71,10 @@ export default {
     },
     formatTime (t) {
       let ret = ''
-      if (Number(t) < 10 && Number(t) >0 ) {
+      if (Number(t) < 10) {
         ret = '0'
       }
-      return ret + String(t)
+      return ret + String(Number(t))
     }
   }
 }

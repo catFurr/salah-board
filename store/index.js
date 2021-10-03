@@ -87,7 +87,7 @@ export const actions = {
 
     // console.log(fSheet)
     const today = fSheet.body.filter(row => new Date(row.d_date).getTime() === getters.getCurrTime.setHours(0,0,0,0))
-    // console.log(today)
+    console.log(today)
 
     if (today.length > 0) {
       commit('UPDATE_TIMES', today[0])
