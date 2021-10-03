@@ -79,7 +79,7 @@ export const actions = {
     setInterval(updateTime, 1000)
     updateTime()
 
-    const fSheet = await this.$content('prayer_schedule')
+    const fSheet = await this.$content('timings/prayer_schedule')
     .fetch()
     .catch((err) => {
       error({ statusCode: 404, message: 'Spreadsheet not found' + String(err) })
@@ -87,7 +87,7 @@ export const actions = {
 
     // console.log(fSheet)
     const today = fSheet.body.filter(row => new Date(row.d_date).getTime() === getters.getCurrTime.setHours(0,0,0,0))
-    console.log(today)
+    // console.log(today)
 
     if (today.length > 0) {
       commit('UPDATE_TIMES', today[0])
