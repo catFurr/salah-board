@@ -24,12 +24,12 @@
         <div class="text-center">{{ getTime(getCurrDayData.dhuhr.iqama) }}</div>
       </div>
 
-      <div class="grid grid-cols-3 grid-rows-2 py-6 gap-x-3 divide-x divide-black">
+      <div class="grid grid-cols-3 grid-rows-1 py-6 gap-x-3 divide-x divide-black">
         <div class="row-span-2">Asr</div>
         <div class="text-center">{{ getTime(getCurrDayData.asr.athan1) }}</div>
         <div class="text-center">{{ getTime(getCurrDayData.asr.iqama) }}</div>
         <!-- <div class="text-right text-sm">Hanafi</div> -->
-        <div class="col-span-2 px-5">{{ getTime(getCurrDayData.asr.athan2) }}<p class="text-2xl font-mono inline">Hanafi</p></div>
+        <!-- <div class="col-span-2 px-5">{{ getTime(getCurrDayData.asr.athan2) }}<p class="text-2xl font-mono inline">Hanafi</p></div> -->
       </div>
 
       <div class="grid grid-cols-3 gap-4 py-6 divide-x divide-black">
