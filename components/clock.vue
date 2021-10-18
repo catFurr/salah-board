@@ -2,10 +2,10 @@
   <div class="text-center text-9xl mb-4">
     <div class="flex flex-col">
       <div class="py-3">
-        {{ formatTime(getCurrTime.getHours()) }}
+        {{ formatTime((Number(getCurrTime.getHours()) > 12) ? getCurrTime.getHours() - 12 : getCurrTime.getHours()) }}
         {{ getCurrTime.getSeconds() % 2 ? ":" : ":" }}
         {{ formatTime(getCurrTime.getMinutes()) }}
-        <!-- <p class="inline font-mono text-lg">getCurrTime.</p> -->
+        <p class="inline font-mono text-6xl">{{ (Number(getCurrTime.getHours()) > 12) ? "P" : "A" }}</p>
       </div>
 
       <div class="text-3xl font-mono">

@@ -65,9 +65,15 @@ export default {
   },
   methods: {
     getTime (tTime) {
-      const hours = this.formatTime(String(tTime).split(":")[0])
+      let hours = String(tTime).split(":")[0]
+      // let fNight = ""
+      if (hours > 12) {
+        hours = hours - 12
+        // fNight = "P"
+      }
+      hours = this.formatTime(hours)
       const mins = this.formatTime(String(tTime).split(":")[1])
-      return hours + " : " + mins
+      return hours + " : " + mins// + fNight
     },
     formatTime (t) {
       let ret = ''
